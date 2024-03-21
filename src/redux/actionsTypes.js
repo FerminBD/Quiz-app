@@ -1,0 +1,5 @@
+export const CHANGE_CATEGORY = ""
+export const CHANGE_DIFFICULTY = ""
+export const CHANGE_TYPE = ""
+export const CHANGE_AMOUNT = ""
+export const CHANGE_SCORE = ""

@@ -1,4 +1,4 @@
-//ISSUES ON THE IMPORT
+//createStore is deprecated but it still working
 
 import { createStore } from 'redux';
 import reducer from './reducer';

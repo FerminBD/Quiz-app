@@ -12,11 +12,10 @@ export const Questions = () => {
     amout_of_question
   } = useSelector(state => state);
   
-  console.log(amout_of_question);
+  console.log(question_category, question_difficulty, question_type, amout_of_question);
   let apiUrl =  `/api.php?amount=10`;
 
   const { response, loading } = useAxios({ url: apiUrl})
-  console.log(response);
   return (
     <Box>
       <Typography variant="h4">Questions 1</Typography>
@@ -30,7 +29,6 @@ export const Questions = () => {
       <Box mt={5}>
         Score: 2/6
       </Box>
-
     </Box>
   )
 }
