@@ -10,10 +10,9 @@ export const Questions = () => {
     question_difficulty,
     question_type,
     amout_of_question
-  } = useSelector(state => state);
+  } = useSelector((state) => state);
   
-  console.log(question_category, question_difficulty, question_type, amout_of_question);
-  let apiUrl =  `/api.php?amount=10`;
+  let apiUrl = `/api.php?amount=${amout_of_question}`;
 
   const { response, loading } = useAxios({ url: apiUrl})
   return (
