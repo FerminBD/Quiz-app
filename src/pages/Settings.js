@@ -10,8 +10,7 @@ const Settings = () => {
   
   const { response, error, loading} = useAxios({url: "/api_category.php"})
   const history = useNavigate();
-
-
+  
   if(loading) {
     return (
       <Box mt={20}>
