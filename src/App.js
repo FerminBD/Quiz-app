@@ -8,12 +8,13 @@ import { Box } from "@mui/system";
 import Settings from './pages/Settings';
 import Questions from './pages/Questions';
 import FinalScreen from './pages/FinalScreen';
+import './styles.css';
 
 function App() {
   return (
-    <Container maxWidth="sm">
-      <Box textAlign="center" mt={5}>
-      <Typography variant='h2' fontWeight='bold'>Quiz App</Typography>
+    <Container fixed>
+      <Box  textAlign="center" mt={3}>     
+      <Typography variant='h2' fontWeight='bold' mb={5}>QUIZ APP</Typography>
         <Router>
           <Routes>
             <Route path="/" element={<Settings />}></Route>  
@@ -21,7 +22,7 @@ function App() {
             <Route path="/score" element={<FinalScreen />}></Route>  
           </Routes> 
         </Router>
-      </Box>     
+      </Box>  
     </Container>
   );
 }

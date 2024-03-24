@@ -46,7 +46,7 @@ const Settings = () => {
   return (
     <form onSubmit={handleSubmit}>
       <SelectField options={response.trivia_categories} label="Category"/>
-      <SelectField options={difficultyOptions} label="Dificulty"/>
+      <SelectField options={difficultyOptions} label="Difficulty"/>
       <SelectField options={typeOptions} label="Type"/>
       <TextFieldComp />
       <Box mt={3} width="100%">
